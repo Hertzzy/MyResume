@@ -55,21 +55,25 @@ header .menuNavBar ul{
     font-weight: bold;
 }
 .menuNavBar li:hover {
-    color: cadetblue;
+    color: #646464;
     transition: 1.0s;
 }
 
 .btnCv button{
     font-size: 1em;
-    background-color:var(--cor3);
+    background-color:var(--cor1);
     font-weight: 600;
     color: var(--cor6);
     padding: 10px;
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     position: absolute;
     right: 60px;
-    top: 12px;
+    top: 8px;
+    cursor: pointer;
+}
+.btnCv button:hover {
+    background-color: #646464;
 }
 
 .mobile-menu-icon{
@@ -111,6 +115,7 @@ header .menuNavBar ul{
         text-align: center;
         padding-bottom: 1em;
         background-color: var(--cor1);
+        transition: 1s;
     }
 
     .mobile-menu li {
