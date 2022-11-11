@@ -1,11 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap'); */
 :root {
 	--cor1: #797979;
-	--cor2: #e6e6e649;
+	--cor2: #e6e6e600;
 	--cor3: #35B6CE;
 	--cor4: #F4DF26;
 	--cor5: #000;
 	--cor6: #fff;
+    --cor7: #c9c9c9;
+
+    
 }
 
 * {
@@ -28,7 +31,7 @@ header{
     justify-content: space-between;
     padding: 15px 20px;
     height: 60px;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .logo li {
@@ -62,9 +65,7 @@ header .menuNavBar ul{
 
 .btnCv button{
     font-size: 1em;
-    /* background-color:var(--cor1); */
     font-weight: 600;
-    color: var(--cor6);
     padding: 10px;
     border: 2px solid var(--cor1);
     border-radius: 4px;
@@ -73,7 +74,8 @@ header .menuNavBar ul{
     top: 8px;
     cursor: pointer;
     color: var(--cor1);
-    transition: 0.8s;
+    background-color: var(--cor6);
+    /* transition: 0.8s; */
 
 }
 .btnCv button:hover {
@@ -111,6 +113,8 @@ header .menuNavBar ul{
         border: none;
         cursor: pointer;
     }
+    
+
 
     .mobile-menu ul {
         display: flex;
@@ -123,7 +127,7 @@ header .menuNavBar ul{
         text-align: center;
         padding-bottom: 1em;
         background-color: var(--cor1);
-        transition: 1s;
+        /* transition: 1s; */
     }
 
     .mobile-menu li {
@@ -155,16 +159,75 @@ header .menuNavBar ul{
 
 
 /* Home */
-section .image-hero {
-    background-image: url(/assets/imgs/fotos/heroImage2.png);
+.image-hero {
+    background: url(/assets/imgs/fotos/heroImage2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 300px;
+    width: 220px;
     height: 585px;
-    position: relative;
-    left: 65%;
+    position:relative;
+    left: 70%;
     top: 4px;
-    opacity: 0.5;
-    transition: 2s;
+    opacity: 0.9;
+    /* transition: 2s; */
+}
+
+/* Relógio */
+section .timer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 350px;
+    top: 60px;
+    font-size: 1.2em;
+}
+
+section .timer .relogio-pointer{
+    margin: 0 20px 0 0px;
+    width: 160px;
+    height: 130px;
+    box-shadow: 7px 9px 11px 1px var(--cor1);
+}
+section .timer .horas, .minutos, .segundos{
+    font-size: 4em;
+    color: var(--cor6);
+}
+
+section .timer .tempo {
+    color: var(--cor6);
+}
+
+section .timer div {
+    background-color: var(--cor7);
+    padding: 0px 0px;
+    text-align: center;
+}
+
+
+section .basicsInfo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 670px;
+    top: 230px;
+}
+
+.basicsInfo h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--cor1);
+}
+
+.social-links{
+    width: 600px;
+    margin: 40px 140px 0 0;
+}
+
+.social-links .bx{
+    padding: 0 30px 0 0;
+}
+
+.social-links .bx:hover{
+    filter: brightness(0) saturate(100%) invert(18%) sepia(49%) saturate(4896%) hue-rotate(197deg) brightness(109%) contrast(96%);
 }
