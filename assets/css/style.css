@@ -2,11 +2,11 @@
 :root {
 	--cor1: #797979;
 	--cor2: #e6e6e600;
-	--cor3: #35B6CE;
+	--cor3: #1A8CD8;
 	--cor4: #F4DF26;
 	--cor5: #000;
 	--cor6: #fff;
-    --cor7: #c9c9c9;
+    --cor7: #a3a3a3;
 
     
 }
@@ -18,63 +18,68 @@
 }
 
 body {
-    /* font-family: 'Oswald', sans-serif; */
-
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background-color: var(--cor2);
+    background-color: var(--cor5);
+    height: 2000px;
+    width: 100%;
+
 }
 
-header{
+header {
+    width: 100%;
+    height:50px;
+    position: fixed;
+    top: 0; 
+    left: 0;
     display: flex;
-    /* align-items: baseline; */
+}
+
+
+.menu{
+    width: 100%;
+    display: flex;
+    align-items:center;
     justify-content: space-between;
-    padding: 15px 20px;
-    height: 60px;
+    margin: auto;
+    align-items: center;
     /* transition: 1s; */
+    padding: 0 40px;
 }
 
 .logo li {
     list-style-type: none;
     cursor: pointer;
     font-size: 1.1em;
-    color: var(--cor1);
+    color: var(--cor6);
 }
 
 .logo li span {
     font-weight: bolder;
 }
 
-header .menuNavBar ul{
-    display: flex;
-    flex-direction:row;
+.menuNavBar a {
+    padding: 0 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--cor7);
+
 }
 
-.menuNavBar li {
-    display: flex;
-    padding: 0 20px;
-    list-style-type: none;
-    cursor: pointer;
-    color: var(--cor1);
-    font-weight: bold;
-}
-.menuNavBar li:hover {
-    color: #646464;
-    transition: 1.0s;
+.menuNavBar a:focus {
+    color:var(--cor6);
 }
 
 .btnCv button{
     font-size: 1em;
     font-weight: 600;
     padding: 10px;
-    border: 2px solid var(--cor1);
+    border: 2px solid var(--cor6);
     border-radius: 4px;
-    position: absolute;
-    right: 30px;
-    top: 8px;
     cursor: pointer;
-    color: var(--cor1);
-    background-color: var(--cor6);
+    color: var(--cor6);
+    background-color: var(--cor1);
+    margin-right: 20px;
     /* transition: 0.8s; */
 
 }
@@ -95,11 +100,10 @@ header .menuNavBar ul{
 @media screen and (max-width: 930px){
     .menuNavBar{
         display: none;
-
     } 
 
     .btnCv button{
-        margin: 0 30px 0 0;
+        margin-left: 230px;
     }
 
     .mobile-menu-icon{
@@ -113,13 +117,11 @@ header .menuNavBar ul{
         border: none;
         cursor: pointer;
     }
-    
-
 
     .mobile-menu ul {
         display: flex;
-        position: absolute;
-        top: 9%;
+        position: fixed;
+        top: 7.5%;
         left: 0%;
         width: 100%;
         height: 349px;
@@ -159,6 +161,12 @@ header .menuNavBar ul{
 
 
 /* Home */
+
+section .home {
+    position:static;
+
+}
+
 .image-hero {
     background: url(/assets/imgs/fotos/heroImage2.png);
     background-repeat: no-repeat;
@@ -166,10 +174,11 @@ header .menuNavBar ul{
     background-position: center;
     width: 220px;
     height: 585px;
-    position:relative;
-    left: 70%;
-    top: 4px;
-    opacity: 0.9;
+    margin-left: 800px;
+    margin-top: -350px;
+    margin-right: auto;
+    /* align-items:flex-start; */
+    /* margin: 4px 0 0 400px; */
     /* transition: 2s; */
 }
 
@@ -177,10 +186,9 @@ header .menuNavBar ul{
 section .timer {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    right: 350px;
-    top: 60px;
+    margin: 350px -600px 0;
     font-size: 1.2em;
+
 }
 
 section .timer .relogio-pointer{
@@ -226,6 +234,7 @@ section .basicsInfo{
 
 .social-links .bx{
     padding: 0 30px 0 0;
+    
 }
 
 .social-links .bx:hover{
