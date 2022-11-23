@@ -146,10 +146,10 @@ header {
     cursor: pointer;
 }
 
-.dowloadCv:hover{
+/* .dowloadCv:hover{
     background-color: #1A8CD8;
     transition: 0.5s;
-}
+} */
 
 
 .about-content{
@@ -158,6 +158,45 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.about-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--cor3);
+}
+
+#paragrafo-1{
+    margin-top: 20px;
+}
+
+.basics-info {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.colun1,
+.colun2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+}
+
+.colun1 p,
+.colun2 p {
+    font-size: 0.9rem;
+    padding: 10px 0 10px 15px ;
+}
+
+.basics-info span {
+    font-weight: bolder;
+}
+
+.container-collun {
+    display : flex;
+              flex-direction : row;
 }
 
 
