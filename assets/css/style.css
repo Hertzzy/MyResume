@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap'); */
 :root {
 	--cor1: #808080;
 	--cor2: #e6e6e6;
@@ -144,12 +143,6 @@ header {
     cursor: pointer;
 }
 
-/* .dowloadCv:hover{
-    background-color: #1A8CD8;
-    transition: 0.5s;
-} */
-
-
 .about-content, 
 .resume-content,
 .portifolio-content,
@@ -282,12 +275,6 @@ header {
     margin-top: 15px;
 }
 
-/* {
-    width: 2px;
-    height: 250px;
-    background-color: var(--cor3);
-} */
-
 .education-content {
     margin-top: 50px;
 }
@@ -309,6 +296,31 @@ header {
     color: var(--cor5);
 }
 
+.contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contato div{
+    background-color: var(--cor2);
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+
+}
+
+
+.contato span {
+    margin-left: 5px;    
+}
+
+.contato a {
+    color: var(--cor3);
+    padding-left: 5px;
+}
 footer{
     background-color: var(--cor6);
     border-top: 1px solid var(--cor2);
@@ -334,210 +346,3 @@ footer .copyright{
 .copyright a {
     color: var(--cor3);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-.menuNavBar a:focus {
-    color:var(--cor6);
-}
-
-.btnCv button{
-    font-size: 1em;
-    font-weight: 600;
-    padding: 8px 10px;
-    border: 2px solid var(--cor6);
-    border-radius: 4px;
-    cursor: pointer;
-    color: var(--cor6);
-    background-color: var(--cor1);
-    margin-right: 20px;
-}
-.btnCv button:hover {
-    background-color: var(--cor1);
-    color: var(--cor6);
-    transition: 0.8s;
-}
-
-.mobile-menu-icon{
-    display: none;
-}
-
-.mobile-menu{
-    display: none;
-}
-
-@media screen and (max-width: 930px){
-    .menuNavBar{
-        display: none;
-    } 
-
-    .btnCv button{
-        display: none;
-    }
-
-    .mobile-menu-icon{
-        display: flex;
-        position:absolute;
-        top: 10px;
-        right: 40px;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        position: fixed;
-        top: 7.5%;
-        left: 0%;
-        width: 100%;
-        height: 349px;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1em;
-        background-color: var(--cor1);
-    }
-
-    .mobile-menu li {
-        color: var(--cor6);
-        padding: 20px 0;
-    }
-
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2em;
-    }
-
-    .mobile-menu button {
-        border: none;
-        font-size: 1em;
-        background-color: transparent;
-        color: var(--cor6);
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .mobile-menu li:hover {
-        background-color: var(--cor3);
-       
-    }
-    .open {
-        display: block;
-    }
-}
- */
-
-
-/* section .home {
-    position:static;
-
-}
-
-.image-hero {
-    background: url(/assets/imgs/fotos/heroImage2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 220px;
-    height: 585px;
-    margin-left: 800px;
-    margin-top: -350px;
-    margin-right: auto;
-
-} */
-
-/* Relógio */
-/* section .timer {
-    display: flex;
-    flex-direction: row;
-    margin: 350px -600px 0;
-    font-size: 1.2em;
-
-}
-
-section .timer .relogio-pointer{
-    margin: 0 20px 0 0px;
-    width: 160px;
-    height: 130px;
-    box-shadow: 7px 9px 11px 1px var(--cor1);
-}
-section .timer .horas, .minutos, .segundos{
-    font-size: 4em;
-    color: var(--cor6);
-}
-
-section .timer .tempo {
-    color: var(--cor6);
-}
-
-section .timer div {
-    background-color: var(--cor7);
-    padding: 0px 0px;
-    text-align: center;
-}
-
-
-section .basicsInfo{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    right: 670px;
-    top: 230px;
-}
-
-.basicsInfo h1 {
-    font-size: 1.5em;
-    font-weight: 400;
-    color: var(--cor1);
-}
-
-.social-links{
-    width: 600px;
-    margin: 40px 140px 0 0;
-}
-
-.social-links .bx{
-    padding: 0 30px 0 0;
-    
-}
-
-.social-links .bx:hover{
-    filter: brightness(0) saturate(100%) invert(18%) sepia(49%) saturate(4896%) hue-rotate(197deg) brightness(109%) contrast(96%);
-} */
-
-/* Home */
-
-/* main .home-info h1 {
-    font-size: 1.8em;
-    font-weight: 300;
-    color: var(--cor6);
-} */
