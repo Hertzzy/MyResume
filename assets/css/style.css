@@ -6,7 +6,9 @@
 	--cor4: #F4DF26;
 	--cor5: #000000;
 	--cor6: #fff;
-    --cor7: #a3a3a3;
+    --cor7: #c7c7c7;
+    --cor8: rgba(0, 0, 0, 0.733);
+
 }
 
 * {
@@ -118,13 +120,9 @@ header {
 .main-home  {
     font-size: 2.5rem;
     font-weight: 500;
-
-}
-
-.main-home{
     margin-top: 90px;
-    
 }
+
 
 .social-media{
     padding-top: 50px;
@@ -152,7 +150,11 @@ header {
 } */
 
 
-.about-content{
+.about-content, 
+.resume-content,
+.portifolio-content,
+.contact-content,
+.container-content {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -161,7 +163,10 @@ header {
 }
 
 
-.about-content h1 {
+.about-content h1,
+.resume-content h1,
+.portifolio-content h1,
+.contact-content h1{
     font-size: 2rem;
     font-weight: bold;
     border-bottom: 3px solid var(--cor3);
@@ -196,7 +201,138 @@ header {
 
 .container-collun {
     display : flex;
-              flex-direction : row;
+    flex-direction : row;
+}
+
+/* Resume */
+
+#resume {
+    margin-top: 100px;
+}
+
+.sumary-content h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+.skills-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.collun2-skills {
+    margin-top: 6px;
+}
+
+.progress-bar-container {
+    margin-top: 6px;
+}
+
+.progress-bar{
+    width: 570px;
+    height: 8px;
+    margin-top: 6px;
+    background-color: var(--cor7);
+}
+
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: var(--cor3);
+    animation: progress 2000ms ease-in 1;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 70%;
+}
+
+.javaScript {
+    width: 50%;
+}
+
+.programming-logic {
+    width: 60%;
+}
+
+.reactjs{
+    width: 30%;
+}
+
+.english {
+    width: 45%;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+.line1,
+.line2 {
+    width: 2px;
+    height: 250px;
+    background-color: var(--cor3);
+    margin-top: 15px;
+}
+
+/* {
+    width: 2px;
+    height: 250px;
+    background-color: var(--cor3);
+} */
+
+.education-content {
+    margin-top: 50px;
+}
+
+.education-content h2 {
+    margin-bottom: 10px;
+}
+
+.education-content div {
+    width: 95px;
+    background-color: var(--cor2);
+    padding: 4px;
+    margin-left: 15px;
+}
+
+.education-content p {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cor5);
+}
+
+footer{
+    background-color: var(--cor6);
+    border-top: 1px solid var(--cor2);
+}
+
+footer h3 {
+    padding-top: 20px;
+    font-size: 2.5rem;
+    color: var(--cor8);
+}
+
+footer .social-media{
+    margin-right: 25px;
+}
+
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright a {
+    color: var(--cor3);
 }
 
 
