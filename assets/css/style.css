@@ -157,6 +157,11 @@ body {
     cursor: pointer;
 }
 
+.dowloadCv:hover{
+    background-color: var(--cor7);
+    transition: 0.5s;
+}
+
 .about-content, 
 .resume-content,
 .portifolio-content,
