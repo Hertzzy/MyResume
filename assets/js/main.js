@@ -1,14 +1,14 @@
-//Menu Toggle
-// function menuShow() {
-//     let menuMobile = document.querySelector('.mobile-menu')
-//     if(menuMobile.classList.contains('open')){
-//         menuMobile.classList.remove('open');
-//         document.querySelector('.iconToggle').src='/assets/imgs/menu-aberto.png'
-//     }else {
-//         menuMobile.classList.add('open');
-//         document.querySelector('.iconToggle').src = "/assets/imgs/x.png";
-//     }
-// }
+// Menu Toggle
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu')
+    if(menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open');
+        document.querySelector('.iconToggle').src='/assets/imgs/menu-aberto.png'
+    }else {
+        menuMobile.classList.add('open');
+        document.querySelector('.iconToggle').src = "/assets/imgs/x.png";
+    }
+}
 
 //Dowdownload CV
 const download = () => {
@@ -54,5 +54,13 @@ const download = () => {
 
 // console.log(hours, minutes, sec)
 
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.menu-movie');
+
+hamburger.addEventListener("click", () =>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+})
 
 
