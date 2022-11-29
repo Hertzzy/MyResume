@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('/imagem/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+h1 {
+    text-align: center;
+    color: #EBE6EA;
+    
+}
+
+.container {
+    width: 350px;
+    height: 540px;
+    background: #202029;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px 0px black;
+}
+
+#resultado {
+    width: 330px;
+    height: 120px;
+    background-color:#292931;
+    margin: 0 auto;
+    top: 10px;
+    position: relative; 
+    border-radius: 6px;
+
+    color: #EBE6EA;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+    padding: 30px;
+}
+
+.keyboard {
+    color: #EBE6EA;
+
+    height: 350px;
+    width: 330px;
+    margin: 0 auto;
+    position: relative; 
+    top: 10px;
+}
+
+.operator, .number, .empty {
+    font-size: 18px;
+    color: #EBE6EA;
+    font-weight: bold;
+
+    background-color:#292931;
+    width: 60px;
+    height: 60px;
+    margin: 11px;
+    float: left;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.number:hover {
+    background-color:#E8E745;
+    color: #202029;
+}
+.operator:hover {
+    background-color: #9726CF;
+    color: #202029;
+
+}
