@@ -63,6 +63,19 @@
         margin-left: 260px;
 
     }
+
+    .first-collun,
+    .second-collun{
+    display: flex;
+    flex-direction: column;
+}
+
+    .first-collun img,
+    .second-collun img{
+        width: 500px;
+        min-width: 200px;
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -120,6 +133,13 @@
     .education-content {
         margin-left: 10px;
     }
+
+    .first-collun img,
+    .second-collun img{
+        width: 350px;
+        min-width: 150px;
+        height: 200px;
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -137,6 +157,13 @@
     .footer{
     font-size: 1.5rem;
 
+    }
+
+    .first-collun img,
+    .second-collun img{
+        width: 250px;
+        min-width: 150px;
+        height: 150px;
     }
 }
 

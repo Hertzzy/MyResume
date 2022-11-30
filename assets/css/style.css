@@ -177,7 +177,6 @@ body {
 .portifolio-content,
 .contact-content,
 .container-content {
-    /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,7 +278,7 @@ body {
 }
 
 .programming-logic {
-    width: 60%;
+    width: 45%;
 }
 
 .reactjs{
@@ -303,8 +302,6 @@ body {
     background-color: var(--cor3);
     margin-top: 15px;
 }
-
-
 
 .education-content h2 {
     margin-bottom: 10px;
@@ -334,29 +331,22 @@ body {
     
 }
 
-.first-collun div,
-.second-collun  div{
+.first-collun img,
+.second-collun  img{
     margin: 20px 25px 0px 25px;
     width: 300px;
-    height: 200px;
+    height: 160px;
     background-color: var(--cor6);
-    border: 1px solid var(--cor5);
-    border-radius: 8px;
+    border-radius: 3px;
     cursor: pointer;
-}
+    box-shadow: 3px 5px 3px -1px rgba(0,0,0,0.46);
+    transition: 0.4s;
+    }
 
-.project-calc {
-    background-image: url('/assets/imgs/calc-project.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    transition: 0.6s;
 
-}
 .project-calc:hover{
-    transform: scale(1.13);
-    transition: 0.6s;
-
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
 .contato{
@@ -374,7 +364,6 @@ body {
     margin-bottom: 20px;
 
 }
-
 
 .contato span {
     margin-left: 5px;    
@@ -410,8 +399,21 @@ footer .copyright{
     color: var(--cor3);
 }
 
+[data-anime] {
+    position: relative;
+    opacity: 0; /* Start */ 
+    transition: .2s;
+}
 
+[data-anime ="left"] {
+    transform:  translate3d(-50px, 0, 0);
+}
 
+[data-anime ="right"] {
+    transform:  translate3d(50px, 0, 0);
+}
 
-
-  
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
