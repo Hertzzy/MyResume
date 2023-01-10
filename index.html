@@ -1,142 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helter Xavier | Portifólio</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
-
-</head>
-<body class="main-bg">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/assets/js/main.js" defer></script>
+  </head>
+  <body class="main-bg">
     <!-- MENU NAV BAR -->
-        <aside class="menu">
-            <div class="main-content menu-content">
-                <a href="#">
-                    <h1>&lt;Helter <span>Xavier</span>/&gt;</h1>
-                </a>
-            <nav>
-                <ul class="menu-movie">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#portifolio">Portifolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>  
-        </div>
-    </aside> <!-- MENU NAV BAR -->
-
-    <div class="menu-spacing-home"></div>
-
-    <!-- Home -->
-    <section class="intro main-home" >
-        <div class="intro-text-content">
-             <div> I'm Helter Xavier</div> 
-             <div> a Front-End Developer</div>
-            <div>from Campinas, São Paulo</div>
-        
-            
-            <div class="social-media" >
-                <div class="social-links">
-                    <a href="https://twitter.com/Hertzbx" target="_blank">
-                        <i class="bx bx-twitter">
-                            <img width="26px" src="/assets/imgs/icons/twitter.png" alt="twitter">
-                        </i>
-                    </a>
-                    <a href="https://www.facebook.com/helter.xavier" target="_blank">
-                        <i class="bx bx-facebook">
-                            <img width="26px" src="/assets/imgs/icons/facebook.png" alt="twitter">
-                        </i>
-                    </a>
-                    <a href="https://www.instagram.com/hertz_bx/" target="_blank">
-                        <i class="bx bx-instagram">
-                            <img width="26px" src="/assets/imgs/icons/instagram.png" alt="">
-                        </i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/helter-xavier-a05829144/" target="_blank">
-                        <i class="bx bx-linkedin">
-                            <img width="26px" src="/assets/imgs/icons/linkedin.png" alt="">
-                        </i>
-                    </a> 
-                    <a href="https://github.com/Helter98" target="_blank">
-                        <i class="bx bx-github">
-                            <img width="26px" src="/assets/imgs/icons/github.png" alt="">
-                        </i>    
-                    </a> 
-                </div>
+    <div class="container">
+      <aside class="menu">
+        <div class="main-content menu-content">
+          <a href="#">
+            <h1>&lt;Helter <span>Xavier</span>/&gt;</h1>
+          </a>
+          <nav>
+            <ul class="menu-movie">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">Sobre mim</a></li>
+              <li><a href="#resume">Currículo</a></li>
+              <li><a href="#portifolio">Portifólio</a></li>
+              <li><a href="#contact">Fale comigo</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
-            <div class="dowloadCv" onclick="download()" >
-                <img src="./assets/imgs/icons/download.png" alt="">
-            </div>
+          </nav>
         </div>
-    </section> <!-- End home -->
+      </aside>
+      <!-- MENU NAV BAR -->
+
+      <div class="menu-spacing-home"></div>
+      <div class="info main-content">
+        <div class="intro">
+          <div class="text-intro">
+            <h1>
+              Olá, Eu sou o <br />
+              <span class="name-color">Helter Xavier</span> &#128512;
+            </h1>
+            <p>Desenvolvedor Front-End</p>
+          </div>
+          <div class="dowloadCv" onclick="download()">Baixar CV</div>
+        </div>
+        <a href="https://github.com/Helter98"
+          ><img src="/assets/imgs/fotos/image-me.png" alt=""
+        /></a>
+      </div>
+    </div>
 
     <div class="menu-spacing"></div>
 
-    <section class="about-intro" id="about" data-anime="left">
-        <div class="main-content about-content">
-            <h1>ABOUT</h1>
-            <p id="paragrafo-1">Software Engineering student at Unicesumar. Starting a career in technology</p>
-            <p>development, focused on Front-End development.</p>
-
-            <div class="basics-info">
-                
-                <img id="img-bj-me" src="./assets/imgs/fotos/me.jpg" width="250px" alt="me">
-               
-                <div class="container-collun">
-                    <div class="colun1">
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>Birthday:</span> 17 November 1998
-                        </p>
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>Website:</span> ...
-                        </p>
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>Phone:</span> (95) 98104-5192
-                        </p>
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>City:</span> Campinas, São Paulo
-                        </p> 
-                    </div>
-
-                    <div class="colun2">
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>Age:</span> 24
-                        </p>
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>Email:</span> helter.xavier@hotmail.com
-                        </p>
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>University:</span> Unicesumar - EAD
-                        </p>
-                        <p>
-                            <img src="./assets/imgs/icons/seta.png" width="14px" alt="">
-                            <span>Graduation:</span> Software Engineering
-                        </p>
-                    </div>
-    
-                </div>
-            </div>
+    <section id="about">
+      <div class="main-content">
+        <div class="my-info">
+          <h1 class="title">Sobre Mim</h1>
+          <p>
+            Sou o Helter, estudante de Engenharia de Software e Desenvolvedor
+            Front-End
+          </p>
         </div>
+      </div>
     </section>
+    <!-- 
 
     <div class="menu-spacing"></div>
 
@@ -319,8 +255,6 @@
            <span>© Copyright MyResume.</span>
            <span>Designed by <a href="#">Helter Xavier</a></span>
         </div>
-    </footer>
-
-    <script src="/assets/js/main.js"></script>
-</body>
+    </footer> -->
+  </body>
 </html>
