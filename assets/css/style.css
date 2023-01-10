@@ -161,12 +161,13 @@ body {
   padding: 5px 30px;
   border-radius: 18px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .dowloadCv:hover {
   background-color: var(--cor8);
-  transition: 0.2s;
+  transform: scale(0.95);
+  transition: 0.4s;
 }
 
 .info {
@@ -200,6 +201,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.my-info h1 {
+  color: var(--cor2);
+  font-weight: 800;
+  border-bottom: 2px solid var(--cor6);
+}
+
+.my-info p {
+  padding-top: 15px;
+  color: var(--cor1);
 }
 
 /* .info img {
