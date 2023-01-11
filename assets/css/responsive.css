@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1030px) {
   .menu-content {
     height: 57px;
   }
@@ -37,6 +37,18 @@
   .menu-movie.active {
     transform: translateY(0vh);
   }
+  .container-icon {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-content {
+    width: 950px;
+  }
+
+  .info img {
+    margin-top: 40px;
+    width: 350px;
+  }
 }
 
 @media only screen and (max-width: 1055px) {
@@ -74,9 +86,20 @@
     min-width: 200px;
     height: 300px;
   }
+
+  .cards-template {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 995px) {
+  .main-content {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .main-home {
     font-size: 2rem;
   }
@@ -99,9 +122,26 @@
   .contato p {
     margin: 50px 0 0 80px;
   }
+  .container-icon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-content {
+    width: 700px;
+  }
+
+  .intro {
+    font-size: 0.8em;
+  }
+
+  .info img {
+    margin-top: 60px;
+
+    width: 350px;
+  }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 690px) {
   .about-content p {
     display: block;
     font-size: 0.8rem;
@@ -113,31 +153,61 @@
   .education-content {
     margin-left: 50px;
   }
+
+  .main-content {
+    width: 620px;
+  }
+
+  .intro {
+    font-size: 0.7em;
+  }
+
+  .info img {
+    margin-top: 80px;
+    width: 300px;
+  }
+
+  .cards-template {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-@media only screen and (max-width: 510px) {
-  .about-content p {
-    font-size: 0.6rem;
+@media only screen and (max-width: 610px) {
+  .main-content {
+    width: 510px;
   }
-  #img-bj-me {
-    width: 350px;
+  .intro {
+    margin-top: 0px;
+    font-size: 1.1em;
   }
-  .contato p {
-    margin-left: 50px;
-  }
-  .education-content {
-    margin-left: 10px;
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
   }
 
-  .first-collun img,
-  .second-collun img {
-    width: 350px;
-    min-width: 150px;
-    height: 200px;
+  .info img {
+    margin-top: 22px;
+    width: 200px;
+  }
+
+  .dowloadCv {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.4rem 1.5rem;
+  }
+
+  .my-info p {
+    font-size: 0.8;
   }
 }
 
 @media only screen and (max-width: 450px) {
+  .main-content {
+    width: 360px;
+  }
   .main-home {
     font-size: 1.6rem;
   }
