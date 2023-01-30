@@ -22,12 +22,7 @@ const download = () => {
   });
 };
 
-// function redirectCalc(){
-//     location.replace('http://127.0.0.1:5500/projects/calc/calculadora.html');
-// }
-
 //Animate Scroll
-
 const debounce = function (func, wait, immediate) {
   let timeout;
   return function (...args) {
@@ -58,7 +53,6 @@ function animeScroll() {
     } else {
       element.classList.remove(animationClass);
     }
-    // console.log(element.offsetTop);
   });
 }
 
@@ -73,23 +67,26 @@ if (target.length) {
   );
 }
 
-// 3.1 - Verificar a distância entre a barra de Scroll e o topo do site
-// 3.2 - Verificar se a distancia de 3.1 + Offset é maior  do que a distância entre o elemento e o Topo da párgina
-// 3.3 - Se verdadeiro, adicionar classe  de animação, remover se for falso
-// 4 - Ativar a função de animação toda vez que o usuário utilizar o scroll
-// 5 - Otimizar ativação
+// Modal
+let preveiwContainer = document.querySelector(".products-preview");
+let previewBox = preveiwContainer.querySelectorAll(".preview");
 
-// MODAL
-const openModalButton = document.querySelector("#open-modal");
-const closeModalButton = document.querySelector("#close-modal");
-const modal = document.querySelector("#modal");
-const fade = document.querySelector("#fade");
+document.querySelectorAll(".products-container .product").forEach((product) => {
+  product.onclick = () => {
+    preveiwContainer.style.display = "flex";
+    let name = product.getAttribute("data-name");
+    previewBox.forEach((preview) => {
+      let target = preview.getAttribute("data-target");
+      if (name == target) {
+        preview.classList.add("active");
+      }
+    });
+  };
+});
 
-const toggleModal = () => {
-  modal.classList.toggle("hide");
-  fade.classList.toggle("hide");
-};
-
-[openModalButton, closeModalButton, fade].forEach((el) => {
-  el.addEventListener("click", () => toggleModal());
+previewBox.forEach((close) => {
+  close.querySelector(".close-modal").onclick = () => {
+    close.classList.remove("active");
+    preveiwContainer.style.display = "none";
+  };
 });
